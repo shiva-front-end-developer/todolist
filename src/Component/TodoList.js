@@ -94,7 +94,7 @@ const TodoList = () => {
       const response = await fetch(
         `https://jsonplaceholder.typicode.com/todos/${editTaskId}`,
         {
-          method: "PUT",
+          method: "PATCH",
           body: JSON.stringify(updatedTask),
           headers: {
             "Content-type": "application/json; charset=UTF-8",
